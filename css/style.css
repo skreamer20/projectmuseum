@@ -413,7 +413,7 @@ html {
   font-size: 22px;
   font-weight: 300;
   padding: 40px;
-  margin-bottom: 75px;
+  margin-bottom: 55px;
 }
 
 .ticket-section h2 {
@@ -525,6 +525,10 @@ html {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.bigphoto h2 {
+  color: white;
 }
 
 .contacts {
