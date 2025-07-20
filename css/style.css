@@ -613,6 +613,8 @@ html {
 
 /* FOOTER!! */
 .footer {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #000;
   color: #fff;
   padding: 40px 20px 20px;
@@ -702,29 +704,26 @@ html {
 
 
 .footer-bottom {
-  text-align: center;
+  display: flex;
+  justify-content: center; /* по центру */
+  align-items: center;
+  gap: 20px; /* расстояние между ссылками */
   margin-top: 20px;
+  flex-wrap: wrap; /* чтобы не ломалось на мобилках */
   font-size: 14px;
   color: #aaa;
 }
 
 .footer-bottom a {
-  display: block;
-  margin: 4px 0;
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-bottom a:hover {
-  display: block;
-  margin: 4px 0;
-  text-decoration: none;
   color: var(--font-gold);
 }
 
 .footer-bottom a:active {
-  display: block;
-  margin: 4px 0;
-  text-decoration: none;
   color: rgb(255, 246, 166);
 }
