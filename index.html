@@ -18,6 +18,13 @@
                 <p class="logo-text">LOUVRE</p>
             </a>
 
+            <!-- Кнопка-бургер -->
+            <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-item">
@@ -42,6 +49,17 @@
             </nav>
         </div>
     </header>
+
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <a href="#visiting" class="sidebar-link">Visiting</a>
+            <a href="#explore" class="sidebar-link">Explore</a>
+            <a href="#video" class="sidebar-link">Video</a>
+            <a href="#gallery" class="sidebar-link">Gallery</a>
+            <a href="#tickets" class="sidebar-link">Tickets</a>
+            <a href="#contacts" class="sidebar-link">Contacts</a>
+        </nav>
+    </aside>
 
     <main>
         <section class="welcome">
@@ -295,5 +313,14 @@
     <a href="https://github.com/skreamer20">skreamer20</a>
   </div>
 </footer>
+<script>
+  const burger = document.getElementById('burger');
+  const sidebar = document.getElementById('sidebar');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    sidebar.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
